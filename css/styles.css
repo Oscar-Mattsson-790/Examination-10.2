@@ -17,6 +17,17 @@ p {
   font-family: "Fira Sans", sans-serif;
 }
 
+.img__single-room {
+  height: 15rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.img__double-room {
+  height: 30rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -34,7 +45,6 @@ p {
   background-color: rgb(136, 137, 137);
   grid-area: header;
   height: 10rem;
-  width: 100%;
   background-image: url(/css/logo/bonz.ai-logo-color-portrait-full.png);
   background-size: 12%;
   background-repeat: no-repeat;
@@ -59,7 +69,7 @@ p {
 
 .main {
   grid-area: main;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .main__content {
@@ -74,15 +84,53 @@ p {
   padding: 2rem;
   border-radius: 5px;
 }
+
+.section__singlerooms {
+  display: flex;
+  background-color: rgb(136, 137, 137);
+  gap: 2rem;
+  border-radius: 5px;
+  height: 31rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.section__doublerooms {
+  display: flex;
+  background-color: rgb(136, 137, 137);
+  border-radius: 5px;
+  height: 46rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.room__single {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.room__heading {
+  color: #54eabd;
+}
+
+.room__double {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
 .content__heading {
   height: 3rem;
   font-size: 4rem;
   color: #54eabd;
 }
+
 .content__text {
   padding-right: 30rem;
   line-height: 1.5rem;
 }
+
 .content__button {
   border: none;
   border-radius: 999rem;
@@ -93,6 +141,7 @@ p {
   color: rgb(62, 61, 61);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .footer {
@@ -115,7 +164,7 @@ p {
     grid-template-columns: 100%;
     grid-template-areas:
       none
-      "headr"
+      "header"
       "navigation"
       "main"
       "footer";
@@ -128,5 +177,6 @@ p {
   }
   .content__text {
     padding: 0;
+    text-align: center;
   }
 }

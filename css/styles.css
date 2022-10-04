@@ -14,11 +14,63 @@ h2 {
   font-family: "Frank Ruhl Libre", serif;
   color: #54eabd;
   font-size: 2.2rem;
+  padding: 0rem;
+}
+
+h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-style: italic;
+  color: #54eabd;
+  font-size: 1rem;
 }
 
 p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.2rem;
+}
+
+label {
+  text-align: center;
+  color: #54eabd;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem;
+  margin: 0.4rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.6rem;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  outline-style: none;
+}
+
+button:hover {
+  background-color: rgb(29, 227, 22);
+  color: #fff;
+}
+
+a:hover {
+  background-color: #54eabd;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.icons {
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -32,6 +84,7 @@ p {
     "footer";
   max-width: 1000px;
   margin: 0 auto;
+  gap: 0.2rem;
 }
 
 .header {
@@ -44,6 +97,7 @@ p {
   background-position: center;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -53,6 +107,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 5px;
 }
 .navigation__link {
   text-decoration: none;
@@ -84,7 +139,7 @@ p {
   border: none;
   border-radius: 999rem;
   height: 2.5rem;
-  width: 7rem;
+  width: 11rem;
   cursor: pointer;
   background-color: #54eabd;
   color: rgb(62, 61, 61);
@@ -97,6 +152,9 @@ p {
   grid-area: footer;
   height: 5rem;
   background-color: #54eabd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
 }
 
 .footer__menu {
@@ -110,6 +168,7 @@ p {
 
 .section__singlerooms {
   display: flex;
+  flex-direction: column;
   background-color: rgb(136, 137, 137);
   gap: 2rem;
   border-radius: 5px;
@@ -131,7 +190,6 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
 }
 
 .room__double {
@@ -140,7 +198,15 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.room__text {
   color: #fff;
+  padding: 0.4rem;
+}
+.room__text__price {
+  padding: 0.5rem;
+  color: #54eabd;
 }
 
 .img__single-room {
@@ -150,15 +216,62 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .img__double-room {
-  height: 50%;
+  height: 35%;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.section__calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 137, 137);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.calendar__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 137, 137);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.room__information {
+  height: 83%;
+  background-color: rgb(136, 137, 137);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/css/photos/05-night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 0.5rem;
+}
+
+.information__list {
+  background-color: rgb(136, 137, 137);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 50%;
+  opacity: 0.9;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
     grid-template-areas:
       "header header header header header header"
@@ -218,5 +331,14 @@ p {
   .section__singlerooms,
   .section__doublerooms {
     margin-top: 1rem;
+    flex-direction: row;
+  }
+
+  .footer__menu {
+    background-size: 20%;
+  }
+
+  .information__list {
+    width: 25%;
   }
 }

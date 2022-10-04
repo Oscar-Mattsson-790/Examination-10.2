@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>About</title>
+    <title>bonz.ai rooms</title>
   </head>
   <body>
     <div class="wrapper">
@@ -16,10 +16,18 @@
         <figcaption class="header__logo"></figcaption>
       </header>
       <nav class="navigation">
-        <a href="#" class="navigation__link">Home</a>
-        <a href="#" class="navigation__link">About us</a>
-        <a href="#" class="navigation__link">Partners</a>
-        <a href="#" class="navigation__link">Contact</a>
+        <p class="nav__icon">
+          <a href="#" class="navigation__link">Home</a>
+        </p>
+        <p class="nav__icon">
+          <a href="#" class="navigation__link">About us</a>
+        </p>
+        <p class="nav__icon">
+          <a href="#" class="navigation__link">Partners</a>
+        </p>
+        <p class="nav__icon">
+          <a href="#" class="navigation__link">Contact</a>
+        </p>
       </nav>
       <main class="main">
         <section class="section__singlerooms">
@@ -37,7 +45,12 @@
               voluptas? Facere.
             </p>
             <p class="room__text">59.98€ / night</p>
-            <button class="content__button">BOOK NOW</button>
+            <button
+              class="content__button"
+              onClick="location.href='booking.html'"
+            >
+              BOOK NOW
+            </button>
           </article>
           <article class="room__single">
             <img
@@ -53,7 +66,12 @@
               voluptas? Facere.
             </p>
             <p class="room__text">79.98€ / night</p>
-            <button class="content__button">BOOK NOW</button>
+            <button
+              class="content__button"
+              onClick="location.href='booking.html'"
+            >
+              BOOK NOW
+            </button>
           </article>
         </section>
         <section class="section__doublerooms">
@@ -74,15 +92,20 @@
               class="img__double-room"
             />
             <p class="room__text">99.98€ / night</p>
-            <button class="content__button">BOOK NOW</button>
+            <button
+              class="content__button"
+              onClick="location.href='booking.html'"
+            >
+              BOOK NOW
+            </button>
           </article>
         </section>
       </main>
       <footer class="footer">
         <ul class="footer__menu">
-          <li>Calle de la Rodrigo</li>
-          <li>Costa Rica</li>
-          <li>Tamarindo</li>
+          <li>Address:</li>
+          <li>45 Meteres South of the Diria Hotel, C. Central</li>
+          <li>Tamarindo, 50309, Costa Rica</li>
         </ul>
       </footer>
     </div>

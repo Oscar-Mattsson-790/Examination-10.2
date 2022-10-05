@@ -66,7 +66,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.9;
   transition: 0.3s;
   border-radius: 15px 50px;
 }
@@ -167,6 +167,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  background-image: url(/css/logo/bonz.ai-logo-black-landscape.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: bottom right 0.5rem;
 }
 
 .footer__menu {
@@ -334,15 +338,6 @@ a:hover {
       "footer footer footer footer footer footer";
   }
 
-  p {
-    font-size: 1rem;
-  }
-
-  h1,
-  h2 {
-    font-size: 2rem;
-  }
-
   .header {
     background-size: 11%;
   }
@@ -357,20 +352,6 @@ a:hover {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: rgb(16, 16, 16);
-  }
-
-  .room__list {
-    width: 22%;
-    padding-left: 1rem;
-  }
-
-  .room__text {
-    font-size: 1.2rem;
-  }
-
-  .cards__text {
-    font-size: 0.9rem;
-    margin: auto 8rem auto 8rem;
   }
 
   .cards {
@@ -402,5 +383,19 @@ a:hover {
     background-size: 100%;
     width: 70%;
     height: 20rem;
+  }
+
+  .room__list {
+    width: 22%;
+    padding-left: 1rem;
+  }
+
+  .room__text {
+    font-size: 1.2rem;
+  }
+
+  .cards__text {
+    font-size: 0.9rem;
+    margin: auto 8rem auto 8rem;
   }
 }

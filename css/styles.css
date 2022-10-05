@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  background-color: #ebebeb;
+  background-color: #305046;
+  /* background-color: #ebebee; */
   width: 100vw;
   height: 100vh;
 }
@@ -15,6 +16,7 @@ h2 {
   color: #54eabd;
   font-size: 2rem;
   padding: 0rem;
+  text-align: center;
 }
 
 h3 {
@@ -35,6 +37,9 @@ ul {
 }
 
 label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #54eabd;
   border-radius: 5px;
@@ -76,6 +81,19 @@ a:hover {
   border-radius: 15px 50px;
 }
 
+select#room {
+  border: 0px;
+  outline: 0px;
+}
+
+#room {
+  width: 100%;
+  background-color: #54eabd;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -94,7 +112,7 @@ a:hover {
 .header {
   background-color: rgb(136, 137, 137);
   grid-area: header;
-  height: 8rem;
+  height: 7rem;
   background-image: url(/css/logo/bonz.ai-logo-color-portrait-full.png);
   background-size: 22%;
   background-repeat: no-repeat;
@@ -106,7 +124,7 @@ a:hover {
 
 .navigation {
   background-color: #acead7;
-  height: 3rem;
+  height: 4rem;
   grid-area: navigation;
   display: flex;
   justify-content: space-evenly;
@@ -343,13 +361,18 @@ a:hover {
       "footer footer footer footer";
   }
 
+  body {
+    background-color: #305046;
+  }
+
   .header {
     background-size: 11%;
+    height: 8rem;
   }
 
   .main__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;

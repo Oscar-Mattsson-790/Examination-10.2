@@ -43,7 +43,6 @@ label {
   color: #54eabd;
   border-radius: 5px;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 input {
@@ -119,7 +118,8 @@ select#room {
   background-position: center;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .navigation {
@@ -166,6 +166,7 @@ select#room {
   background-position: center;
   background-size: cover;
   border-radius: 5px;
+  margin-top: 0.2rem;
   flex-wrap: wrap;
 }
 
@@ -188,11 +189,12 @@ select#room {
   background-color: #54eabd;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
   background-image: url(/css/logo/bonz.ai-logo-black-landscape.png);
   background-repeat: no-repeat;
   background-size: 20%;
-  background-position: bottom right 0.5rem;
+  background-position: bottom right 0.2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .footer__menu {
@@ -344,9 +346,9 @@ select#room {
 }
 
 .icons2 {
-  text-decoration-line: line-through;
-  text-decoration-color: red;
+  color: rgb(74, 72, 72);
   font-size: 0.9rem;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
@@ -383,8 +385,7 @@ select#room {
     align-items: flex-start;
     text-align: start;
     padding: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.7rem;
     color: rgb(16, 16, 16);
     flex-wrap: wrap;
   }
@@ -447,12 +448,17 @@ select#room {
   }
 
   .section__booking {
-    margin-top: 0.4rem;
+    margin-top: 0.8rem;
     height: 40rem;
   }
 
   .section__calendar {
     display: flex;
     flex-direction: row;
+  }
+
+  .footer {
+    margin-top: 0.5rem;
+    background-position: bottom 0.8rem right 1.5rem;
   }
 }

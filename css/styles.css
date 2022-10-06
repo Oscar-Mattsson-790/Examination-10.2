@@ -113,8 +113,8 @@ select#room {
   background-color: rgb(136, 137, 137);
   grid-area: header;
   height: 7rem;
-  background-image: url(/css/logo/bonz.ai-logo-color-portrait-full.png);
-  background-size: 22%;
+  background-image: url(/css/logo/bonz.ai-logo-color-landscape.png);
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
@@ -228,7 +228,6 @@ select#room {
   padding: 1rem;
   color: #fff;
   border-radius: 5px;
-  /* margin-top: 0.5rem; */
   margin: 1rem;
 }
 
@@ -237,7 +236,7 @@ select#room {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 10rem;
+  height: 9rem;
   border-radius: 8px;
   width: 100%;
   padding: 0;
@@ -251,7 +250,7 @@ select#room {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 10rem;
+  height: 9rem;
   border-radius: 8px;
   width: 100%;
   padding: 0;
@@ -265,7 +264,7 @@ select#room {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 10rem;
+  height: 9rem;
   border-radius: 8px;
   width: 100%;
   padding: 0;
@@ -278,7 +277,7 @@ select#room {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 10rem;
+  height: 9rem;
   border-radius: 8px;
   width: 100%;
   padding: 0;
@@ -295,6 +294,7 @@ select#room {
 
 .section__calendar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(136, 137, 137);
@@ -311,8 +311,8 @@ select#room {
   border-top-right-radius: 5px;
 }
 
-.info__box {
-  height: 87%;
+.section__booking {
+  height: 75%;
   background-color: rgb(136, 137, 137);
   border-radius: 5px;
   display: flex;
@@ -329,7 +329,7 @@ select#room {
   background-color: rgb(105, 108, 108);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  width: 65%;
+  width: 69%;
   opacity: 0.9;
   list-style: none;
   display: flex;
@@ -340,6 +340,12 @@ select#room {
 }
 
 .icons {
+  font-size: 0.9rem;
+}
+
+.icons2 {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
   font-size: 0.9rem;
 }
 
@@ -366,7 +372,7 @@ select#room {
   }
 
   .header {
-    background-size: 11%;
+    background-size: 50%;
     height: 8rem;
   }
 
@@ -406,7 +412,7 @@ select#room {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35rem;
+    height: 45rem;
     margin: 0.5rem 0 0 0;
     width: 100%;
   }
@@ -420,13 +426,14 @@ select#room {
   .cards__2,
   .cards__3,
   .cards__4 {
-    background-position: contain;
-    background-size: 100%;
-    height: 12rem;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    background-color: #305046;
   }
 
   .room__list {
-    width: 42%;
+    width: 40%;
   }
 
   .droppdownList {
@@ -439,8 +446,13 @@ select#room {
     padding: 0;
   }
 
-  .info__box {
+  .section__booking {
     margin-top: 0.4rem;
-    height: 86%;
+    height: 40rem;
+  }
+
+  .section__calendar {
+    display: flex;
+    flex-direction: row;
   }
 }

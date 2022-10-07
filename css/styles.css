@@ -130,7 +130,7 @@ a:hover {
   align-items: center;
   opacity: 0.6;
   transition: 0.3s;
-  border-radius: 15px 50px;
+  border-radius: 50px 15px;
 }
 
 .main {

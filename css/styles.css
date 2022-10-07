@@ -342,13 +342,13 @@ select#room {
   background-color: rgb(105, 108, 108);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  width: 13.5rem;
+  width: 13rem;
   opacity: 0.9;
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }
 
@@ -459,7 +459,7 @@ select#room {
   }
 
   .room__list {
-    width: 40%;
+    width: 70rem;
   }
 
   .droppdown__list {

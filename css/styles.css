@@ -169,10 +169,6 @@ a:hover {
   margin-bottom: 1.2rem;
 }
 
-#confirm_button {
-  width: 100%;
-}
-
 .footer {
   grid-area: footer;
   height: 5rem;
@@ -285,12 +281,6 @@ a:hover {
   background-color: rgb(136, 137, 137);
 }
 
-.room__text {
-  padding: 0.5rem;
-  color: #54eabd;
-  font-size: 1.2rem;
-}
-
 .section__calendar {
   display: flex;
   flex-direction: column;
@@ -321,11 +311,6 @@ a:hover {
   margin-top: 2rem;
 }
 
-.booking__heading {
-  padding: 1rem;
-  margin: auto;
-}
-
 .room__list {
   background-color: rgb(105, 108, 108);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -338,15 +323,6 @@ a:hover {
   justify-content: flex-start;
   align-items: flex-start;
   color: #fff;
-  text-align: center;
-}
-
-.form__input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .icons {
@@ -448,16 +424,6 @@ a:hover {
     background-size: cover;
     height: 30rem;
     background-color: #305046;
-  }
-
-  .room__list {
-    width: 12rem;
-  }
-
-  .room__text {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
   }
 
   .section__calendar {

@@ -316,8 +316,6 @@ select#room {
   justify-content: center;
   align-items: center;
   background-color: rgb(136, 137, 137);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .calendar__heading {
@@ -331,17 +329,19 @@ select#room {
 }
 
 .section__booking {
-  height: 75%;
-  background-color: rgb(136, 137, 137);
-  border-radius: 5px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url(/css/photos/05-night.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  align-items: baseline;
+  height: 30%;
+  background-color: rgb(136, 137, 137);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.booking__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4rem;
 }
 
 .room__list {
@@ -419,14 +419,9 @@ select#room {
     align-items: flex-start;
     text-align: start;
     padding: 10rem;
-    margin-top: 0.4rem;
+    margin-top: 0.6rem;
     color: rgb(16, 16, 16);
     flex-wrap: wrap;
-    background-image: url(/css/photos/09-night.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
   }
 
   .content__text {
@@ -483,14 +478,15 @@ select#room {
     padding: 0;
   }
 
-  .section__booking {
-    margin-top: 0.8rem;
-    height: 40rem;
-  }
-
   .section__calendar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__booking {
+    height: 25%;
   }
 
   .footer {

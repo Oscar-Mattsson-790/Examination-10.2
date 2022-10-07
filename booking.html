@@ -31,47 +31,58 @@
       </nav>
       <main class="main">
         <article class="calendar__heading">
-          <h3>Select dates:</h3>
+          <h3>Select your dates:</h3>
         </article>
         <section class="section__calendar">
           <label for="start">Check in:</label>
           <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" />
           <label for="end">Check out:</label>
           <input type="date" id="end" name="trip-end" value="yyyy-mm-dd" />
+          <button class="content__button">SEARCH &#128269;</button>
         </section>
         <section class="section__booking">
-          <h2 class="room__heading">The future of Eco hotels!</h2>
-          <p class="room__text">Price from 59.98$</p>
+          <h2 class="booking__heading">Available Rooms:</h2>
+        </section>
+      </main>
+      <main class="mainSecond">
+        <section class="cards__card">
+          <figure class="cards__3"></figure>
+          <h2 class="cards__heading">Single Room</h2>
           <ul class="room__list">
-            <form class="form__input" action="#">
-              <label for="rooms">Avaible Rooms</label>
-              <select name="rooms" id="room">
-                <option value="Empty">Pick your choice</option>
-                <option value="Single">Single Room 59,98$</option>
-                <option value="Single Room View">
-                  Single with a View 79.98$
-                </option>
-                <option value="Double Room">Double Room 99.98$</option>
-                <option value="Double Room View">
-                  Double with a View 119.98$
-                </option>
-              </select>
-            </form>
+            <li><p class="icons">&#127969; 32 kvm</p></li>
+            <li><p class="icons">&#128719; 1 King Bed</p></li>
+            <li><p class="icons">&#127869; Breakfast included</p></li>
+            <li><p class="icons">&#127760; Free wi-fi</p></li>
+            <li><p class="icons2">&#128021; Pets</p></li>
+            <li><p class="icons2">&#128705; Bathtub</p></li>
           </ul>
-          <form action="#">
-            <input type="text" placeholder="First Name" /><br />
-            <input type="text" placeholder="Last Name" /><br />
-            <input type="email" placeholder="E-mail" />
-            <br />
-            <button
-              class="content__button"
-              id="confirm_button"
-              type="submit"
-              value="Submit"
-            >
-              CONFIRM
-            </button>
-          </form>
+          <p class="room__text">59.98$ / night</p>
+          <button
+            class="content__button"
+            onClick="location.href='booking.html'"
+          >
+            BOOK NOW
+          </button>
+        </section>
+        <section class="cards__card">
+          <figure class="cards__4"></figure>
+          <h2 class="cards__heading">Double Room with a View</h2>
+          <ul class="room__list">
+            <li><p class="icons">&#127969; 32 kvm</p></li>
+            <li><p class="icons">&#128719; 1 King Bed</p></li>
+            <li><p class="icons">&#127869; Breakfast included</p></li>
+            <li><p class="icons">&#127760; Free wi-fi</p></li>
+            <li><p class="icons">&#128021; Pets</p></li>
+            <li><p class="icons">&#128705; Bathtub</p></li>
+          </ul>
+          <p class="room__text">119.98$ / night</p>
+          <button
+            class="content__button"
+            onClick="location.href='booking.html'"
+          >
+            BOOK NOW
+          </button>
+        </section>
       </main>
       <footer class="footer">
         <ul class="footer__menu">

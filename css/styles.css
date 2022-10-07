@@ -350,6 +350,15 @@ select#room {
   justify-content: flex-start;
   align-items: flex-start;
   color: #fff;
+  text-align: center;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .icons {
@@ -460,10 +469,6 @@ select#room {
 
   .room__list {
     width: 12rem;
-  }
-
-  .droppdown__list {
-    width: 18%;
   }
 
   .room__text {
